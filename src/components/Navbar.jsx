@@ -34,7 +34,7 @@ const Navbar = () => {
         {/* Navigation links */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
-            <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
+            <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-xs font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
@@ -43,7 +43,7 @@ const Navbar = () => {
         {/* Socialmedia links */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {socialLinks.map((link) => (
-            <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
+            <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-xs font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
               <a href={link.url}>{link.title}</a>
             </li>
           ))}
@@ -55,7 +55,7 @@ const Navbar = () => {
           <div className={`${!toggle ? 'hidden' : 'flex justify-center gap-20 items-center'} p-6 absolute top-20 mx-4 my-2 bg-tertiary z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {navLinks.map((link) => (
-                <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => {
+                <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} font-poppins font-medium cursor-pointer text-xs`} onClick={() => {
                   setToggle(!toggle);
                   setActive(link.title);
                 }}>
@@ -65,7 +65,7 @@ const Navbar = () => {
             </ul>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {socialLinks.map((link) => (
-                <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => {
+                <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} font-poppins font-medium cursor-pointer text-xs`} onClick={() => {
                   setToggle(!toggle);
                   setActive(link.title);
                 }}>
