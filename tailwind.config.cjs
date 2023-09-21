@@ -9,7 +9,7 @@ module.exports = {
         secondary: "#212529",
         tertiary: "#DDBEA9",
         background: "#F8F9FA",
-        inactive: "#F8F9FA"
+        paragraph: "#6C757D"        
       }
     }
   },

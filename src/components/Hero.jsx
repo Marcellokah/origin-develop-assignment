@@ -4,7 +4,7 @@ import { styles } from '../styles';
 const Hero = () => {
   return (
     <section className="relative w-screen pt-60 p-20 mx-auto">
-      <div className={`${styles.paddingX} max-w-5xl mx-auto flex flex-row items-start gap-5`}>
+      <div className={`${styles.paddingX} max-w-5xl mx-auto flex flex-row gap-5`}>
         <div className="flex flex-col justify-start gap-8">
           <p className="font-light text-primary text-xs">29.Jun.2021</p>
           <p className="font-bold text-secondary text-2xl">Aron Klein’s captivating images of the UDEA’s culture.</p>
