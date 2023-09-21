@@ -20,17 +20,32 @@ export const navLinks = [
 export const socialLinks = [
     {
         id: "facebook",
-        title: "FB",
+        title: "Fb",
         url: "https://www.facebook.com/",
     },
     {
         id: "twitter",
-        title: "TW",
+        title: "Tw",
         url: "https://twitter.com/",
     },
     {
         id: "linkedin",
-        title: "LI",
+        title: "Ln",
         url: "https://www.linkedin.com/",
     },
 ]
+
+export const footerLinks = [
+    {
+        id: "about",
+        title: "About Us",
+    },
+    {
+        id: "archive",
+        title: "Archive",
+    },
+    {
+        id: "contact",
+        title: "Contact Us",
+    },
+];
