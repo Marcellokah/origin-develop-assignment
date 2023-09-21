@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section className={`${styles.paddingX} bg-secondary w-full mx-auto flex flex-col items-start gap-10 p-10`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto border-b-2 border-primary pb-10'>
-        
+
         {/* Logo */}
         <div>
           <h3 className='font-bold text-lg'>VENCE Studio.</h3>
@@ -29,8 +29,9 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-
       </div>
+
+      {/* Copyright */}
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto text-primary text-xs'>
         <p>1088, North Street, Alexandria, AU</p>
         <p>© 2022, All Rights Reserved</p>
