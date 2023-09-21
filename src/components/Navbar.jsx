@@ -24,24 +24,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-background" : "bg-transparent"
       }`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto leading-6'>
 
         {/* Vercel logo */}
-        {/* <Link to='/' className='flex items-center gap-2' onClick={() => {
-          setActive("");
-          window.scrollTo(0, 0);
-        }}>
-          <img src={logo} alt='logo' className='w-12 h-12 object-contain' />
-        </Link> */}
-        <h3 className='uppercase font-bold text-lg text-secondary'>vercel<span>.</span></h3>
+        <h3 className='uppercase font-bold text-lg text-secondary'>vercel<span className='text-tertiary'>.</span></h3>
 
         {/* Navigation links */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
-            <li key={link.id} className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
-              <a href={`/${link.id}`}>{link.title}</a>
+            <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
@@ -49,7 +43,7 @@ const Navbar = () => {
         {/* Socialmedia links */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {socialLinks.map((link) => (
-            <li key={link.id} className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
+            <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
               <a href={link.url}>{link.title}</a>
             </li>
           ))}
@@ -58,10 +52,10 @@ const Navbar = () => {
         {/* Mobile navbar */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img src={toggle ? close : menu} alt='menu' className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={() => setToggle(!toggle)} />
-          <div className={`${!toggle ? 'hidden' : 'flex gap-20 items-start'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex justify-center gap-20 items-center'} p-6 absolute top-20 mx-4 my-2 bg-tertiary z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {navLinks.map((link) => (
-                <li key={link.id} className={`${active === link.title ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => {
+                <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => {
                   setToggle(!toggle);
                   setActive(link.title);
                 }}>
@@ -71,7 +65,7 @@ const Navbar = () => {
             </ul>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {socialLinks.map((link) => (
-                <li key={link.id} className={`${active === link.title ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => {
+                <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => {
                   setToggle(!toggle);
                   setActive(link.title);
                 }}>

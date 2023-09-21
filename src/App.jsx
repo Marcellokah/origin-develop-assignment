@@ -2,7 +2,7 @@ import { Hero, Navbar, Image, About, Slider, Info, Buttons, Footer } from './com
 
 const App = () => {
   return (
-      <div className="relative z-0 bg-primary w-screen">
+      <div className="relative z-0 bg-background w-screen">
         <Navbar />
         <Hero />
         <Image />
