@@ -3,7 +3,7 @@ import { styles } from '../styles'
 
 const Footer = () => {
   return (
-    <section className={`${styles.paddingX} bg-gray-300 w-full mx-auto flex flex-col items-start gap-5 pt-10`}>
+    <section className={`${styles.paddingX} bg-secondary w-full mx-auto flex flex-col items-start gap-5 p-10`}>
       <div>
         <h3>VENCE Studio.</h3>
       </div>
