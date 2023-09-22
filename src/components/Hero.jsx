@@ -14,7 +14,7 @@ const Hero = () => {
 
         {/* Details */}
         <div className='border-t-2 pt-5 w-full animate__animated animate__fadeIn animate__delay-1s'>
-          <ul ul className='list-none flex flex-row gap-12 font-light text-primary text-xs animate__animated animate__fadeInLeft animate__delay-1s'>
+          <ul ul className='list-none flex flex-row gap-12 font-light text-primary text-xs animate__animated animate__fadeIn animate__delay-1s'>
             <li>Peter Rowardson</li>
             <li>Design Trend</li>
             <li>2 min</li>
