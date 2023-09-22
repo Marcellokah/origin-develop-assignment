@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation links */}
-        <ul className='list-none hidden sm:flex flex-row gap-10 text-primary text-xs'>
+        <ul className='list-none flex flex-row gap-10 text-primary text-xs text-center'>
           {footerLinks.map((link) => (
             <li key={link.id}>
               <a href={`#${link.id}`}>{link.title}</a>
@@ -34,7 +34,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto text-primary text-xs'>
         <p>1088, North Street, Alexandria, AU</p>
-        <p>© 2022, All Rights Reserved</p>
+        <p className='text-right'>© 2022, All Rights Reserved</p>
       </div>
     </section>
   )

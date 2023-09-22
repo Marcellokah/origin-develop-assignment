@@ -4,7 +4,7 @@ import { clothes } from '../assets'
 const Image = () => {
   return (
     <section className='w-full flex justify-center py-15'>
-        <img src={clothes}></img>
+        <img src={clothes} alt='clothes'></img>
     </section>
   )
 }

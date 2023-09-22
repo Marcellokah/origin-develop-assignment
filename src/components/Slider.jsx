@@ -21,16 +21,16 @@ export default class SimpleSlider extends Component {
       <div className=" max-w-5xl mx-auto ">
         <Slider {...settings}>
           <div className="px-5">
-            <img src={slider1}></img>
+            <img src={slider1} alt="sliderImage1"></img>
           </div>
           <div className="px-5">
-            <img src={slider2}></img>
+            <img src={slider2} alt="sliderImage2"></img>
           </div>
           <div className="px-5">
-            <img src={slider1}></img>
+            <img src={slider1} alt="sliderImage1"></img>
           </div>
           <div className="px-5">
-            <img src={slider2}></img>
+            <img src={slider2} alt="sliderImage2"></img>
           </div>
         </Slider>
       </div>
