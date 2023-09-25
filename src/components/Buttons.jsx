@@ -4,8 +4,8 @@ import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
 
 const Buttons = () => {
   return (
-    <section className='w-full mx-auto'>
-      <div className={`${styles.paddingX} bg-buttons_bg text-sm font-medium text-secondary w-full mx-auto flex flex-row justify-around py-10 gap-5`}>
+    <section className='w-full mx-auto bg-buttons_bg'>
+      <div className={`${styles.paddingX} max-w-7xl  text-sm font-medium text-secondary w-full mx-auto flex flex-row justify-around py-10`}>
 
         {/* Left button and logo */}
         <button className='flex gap-3'>

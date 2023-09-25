@@ -50,7 +50,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <BiSearch className='hidden sm:flex text-primary/50 hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-sm cursor-pointer mt-1.5 ' />
+          <BiSearch className='hidden sm:flex text-primary/50 hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-sm cursor-pointer mt-1.5'/>
         </div>
 
         {/* Mobile navbar */}
