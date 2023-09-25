@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { navLinks, socialLinks } from '../constants';
 import { menu, close } from '../assets';
 import { styles } from '../styles';
+import { BiSearch } from 'react-icons/bi';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -40,14 +41,17 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Socialmedia links */}
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {socialLinks.map((link) => (
-            <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-xs font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
-              <a href={link.url}>{link.title}</a>
-            </li>
-          ))}
-        </ul>
+        {/* Socialmedia links and search icon*/}
+        <div className='flex justify-end gap-5'>
+          <ul className='list-none hidden sm:flex flex-row gap-10 border-r-2 py-1 pr-5'>
+            {socialLinks.map((link) => (
+              <li key={link.id} className={`${active === link.title ? "text-primary underline underline-offset-8 decoration-tertiary" : "text-primary/50"} hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-xs font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
+                <a href={link.url}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
+          <BiSearch className='text-primary/50 hover:text-primary hover:underline hover:decoration-tertiary hover:underline-offset-8 text-sm cursor-pointer mt-1.5'/>
+        </div>
 
         {/* Mobile navbar */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
