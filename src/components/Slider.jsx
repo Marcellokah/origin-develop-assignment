@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { slider1, slider2 } from "../assets";
+import FetchedImage from "./FetchedImage";
 
 export default class SimpleSlider extends Component {
   render() {
@@ -14,23 +14,23 @@ export default class SimpleSlider extends Component {
       autoplay: true,
       autoplaySpeed: 2000,
       arrows: false,
-      centerMode:true,
+      centerMode: true,
     };
 
     return (
       <div className=" max-w-5xl mx-auto ">
         <Slider {...settings}>
           <div className="px-5">
-            <img src={slider1} alt="sliderImage1"></img>
+            <FetchedImage />
           </div>
           <div className="px-5">
-            <img src={slider2} alt="sliderImage2"></img>
+            <FetchedImage />
           </div>
           <div className="px-5">
-            <img src={slider1} alt="sliderImage1"></img>
+            <FetchedImage />
           </div>
           <div className="px-5">
-            <img src={slider2} alt="sliderImage2"></img>
+            <FetchedImage />
           </div>
         </Slider>
       </div>
