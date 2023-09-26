@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { navLinks, socialLinks } from '../constants';
-import { menu, close } from '../assets';
-import { styles } from '../styles';
-import { BiSearch } from 'react-icons/bi';
+import React, { useEffect, useState } from 'react'
+import { navLinks, socialLinks } from '../constants'
+import { menu, close } from '../assets'
+import { styles } from '../styles'
+import { BiSearch } from 'react-icons/bi'
 
 const Navbar = () => {
   const [active, setActive] = useState('');

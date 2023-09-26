@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { slider1, slider2 } from "../assets";
 
+
+{/* Slider settings */ }
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
@@ -14,9 +16,11 @@ export default class SimpleSlider extends Component {
       autoplay: true,
       autoplaySpeed: 2000,
       arrows: false,
-      centerMode:true,
+      centerMode: true,
     };
 
+
+    {/* Image containers */ }
     return (
       <div className=" max-w-5xl mx-auto ">
         <Slider {...settings}>

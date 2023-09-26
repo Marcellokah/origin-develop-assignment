@@ -1,6 +1,6 @@
 import React from 'react'
 import { styles } from '../styles'
-import { GoShare } from 'react-icons/go';
+import { GoShare } from 'react-icons/go'
 
 const Info = () => {
   return (

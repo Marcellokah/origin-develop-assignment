@@ -1,6 +1,6 @@
 import React from 'react'
-import { styles } from '../styles';
-import 'animate.css';
+import { styles } from '../styles'
+import 'animate.css'
 
 const Hero = () => {
   return (

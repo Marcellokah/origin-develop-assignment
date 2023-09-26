@@ -14,3 +14,6 @@ Check out the live demo: [origin-develop-assignment-almasi.netlify.app](https://
 - Tailwind CSS
 - React Icons
 - React Slick
+
+## Note
+I implemented Unsplash API ([branch: unsplash-api](https://github.com/Marcellokah/origin-develop-assignment/tree/unsplash-api)) to fetch images for the image slider, but since I'm on the free version and only have a few tokens to request, I decided not to use it. Therefore the live version uses the main branch, where I imported two images from the Figma design.

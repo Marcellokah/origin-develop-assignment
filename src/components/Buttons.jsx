@@ -1,6 +1,6 @@
 import React from 'react'
 import { styles } from '../styles'
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa'
 
 const Buttons = () => {
   return (
